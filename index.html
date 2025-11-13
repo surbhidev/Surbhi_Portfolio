@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Surbhi • Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#6C63FF">
+</head>
+<body class="light">
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">Portfolio<span>.</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <button id="themeToggle">☀️</button>
+        <a class="resume-btn" href="https://drive.google.com/file/d/1Vh0ojVaUxCgdOnI7lN5wHs07jQ1R98Eg/view?usp=drive_link" target="_blank">Resume</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero container" id="about">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="accent">Surbhi</span></h1>
+      <h2 id="typedText">Computer Scientist</h2>
+      <p>B.Tech Computer Science & Engineering @ IIT Hyderabad.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section container" id="skills">
+    <h2 class="section-title">Skills</h2>
+    
+    <div class="skills-grid">
+      <!-- Programming Languages -->
+      <div class="skills-category">
+        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+        <div class="skills-list">
+          <div class="skill-item">C</div>
+          <div class="skill-item">C++</div>
+          <div class="skill-item">Python</div>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skills-category">
+        <h3><i class="fas fa-globe"></i> Web Development</h3>
+        <div class="skills-list">
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skills-category">
+        <h3><i class="fas fa-database"></i> Databases</h3>
+        <div class="skills-list">
+          <div class="skill-item">PostgreSQL</div>
+          <div class="skill-item">MySQL</div>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="skills-category">
+        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+        <div class="skills-list">
+          <div class="skill-item">Regression</div>
+          <div class="skill-item">Classification</div>
+          <div class="skill-item">Clustering</div>
+          <div class="skill-item">Pandas</div>
+          <div class="skill-item">NumPy</div>
+          <div class="skill-item">Scikit-learn</div>
+          <div class="skill-item">Matplotlib</div>
+          <div class="skill-item">Seaborn</div>
+        </div>
+      </div>
+
+      <!-- Tools & Frameworks -->
+      <div class="skills-category">
+        <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+        <div class="skills-list">
+          <div class="skill-item">Lex</div>
+          <div class="skill-item">Yacc</div>
+          <div class="skill-item">Docker</div>
+          <div class="skill-item">Kubernetes</div>
+        </div>
+      </div>
+
+      <!-- Mobile Development -->
+      <div class="skills-category">
+        <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+        <div class="skills-list">
+          <div class="skill-item">Flutter (Basics)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section container" id="certificates">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certifications-grid">
+      <div class="certification-card">
+        <h4>Docker for the Absolute Beginner</h4>
+        <p class="certification-platform">Udemy</p>
+        <p class="certification-desc">Covered Docker basics, Dockerfiles, Compose, and Swarm</p>
+      </div>
+
+      <div class="certification-card">
+        <h4>Kubernetes for Beginners</h4>
+        <p class="certification-platform">Udemy</p>
+        <p class="certification-desc">Covered YAML, cluster deployment, and Kubernetes fundamentals</p>
+      </div>
+
+      <div class="certification-card">
+        <h4>Cybersecurity Virtual Internship</h4>
+        <p class="certification-platform">Deloitte via Forage</p>
+        <p class="certification-desc">Simulated real-world incident analysis, risk assessment, and secure access design</p>
+      </div>
+
+      <div class="certification-card">
+        <h4>Technology Virtual Internship</h4>
+        <p class="certification-platform">Deloitte via Forage</p>
+        <p class="certification-desc">Gained hands-on experience in coding and development through task-based simulations</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    
+    <!-- Only Button Filters (No Dropdown) -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="research">Research</button>
+      <button class="filter-btn" data-filter="tools">Tools</button>
+    </div>
+
+    <div class="project-grid">
+      <!-- Healthcare Management Project -->
+      <div class="project-card" data-category="web">
+        <h3>Healthcare Management System (MASS)</h3>
+        <p>A comprehensive healthcare platform streamlining patient care, doctor interactions, and hospital administration.</p>
+        <ul>
+          <li><strong>Multi-role Authentication:</strong> Secure role-based access for Patients, Doctors, and Administrators</li>
+          <li><strong>Appointment Management:</strong> Real-time booking, modification and cancellation of appointments</li>
+          <li><strong>Medical Records:</strong> Secure storage and management of patient history and treatment plans</li>
+        </ul>
+        <div class="project-tech">
+          <h4>Tech Stack:</h4>
+          <ul>
+            <li><strong>Frontend:</strong> React Native for cross-platform mobile apps</li>
+            <li><strong>Backend:</strong> Node.js with Express.js</li>
+            <li><strong>Database:</strong> PostgreSQL & MongoDB</li>
+            <li><strong>Deployment:</strong> AWS with auto-scaling</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- E-Bus Service Project -->
+      <div class="project-card" data-category="web">
+        <h3>E-Bus Service — IIT Hyderabad</h3>
+        <p>Full-stack web platform for managing IIT Hyderabad's campus bus service.</p>
+        <ul>
+          <li>Designed centralized dashboards for route tracking and timing updates</li>
+          <li>Implemented guard-side logging system for real-time tracking</li>
+          <li>Reduced manual coordination and improved transport reliability across campus</li>
+        </ul>
+        <div class="project-tech">
+          <h4>Tech Stack:</h4>
+          <ul>
+            <li><strong>Frontend:</strong>HTML, CSS</li>
+            <li><strong>Backend:</strong>JavaScript</li>
+            <li><strong>Deployment:</strong> GitHub Pages</li>
+          </ul>
+        </div>
+        <a href="https://surbhidev.github.io/E-BUS_SERVICE/" target="_blank" class="project-link">View Live Project</a>
+      </div>
+
+      <!-- NCC Project -->
+      <div class="project-card" data-category="web">
+        <h3>NCC IIT Hyderabad Website</h3>
+        <p>Official website for the National Cadet Corps at IIT Hyderabad, featuring information about activities, events, and cadet registration.</p>
+        <ul>
+          <li><strong>Responsive Design:</strong> Optimized for all devices with mobile-first approach</li>
+          <li><strong>Event Management:</strong> Display of upcoming NCC events and activities</li>
+          <li><strong>Cadet Information:</strong> Structured presentation of NCC programs and benefits</li>
+          <li><strong>Interactive UI:</strong> Smooth animations and user-friendly navigation</li>
+        </ul>
+        <div class="project-tech">
+          <h4>Tech Stack:</h4>
+          <ul>
+            <li><strong>Frontend:</strong>HTML, CSS</li>
+            <li><strong>Backend:</strong>JavaScript</li>
+            <li><strong>Deployment:</strong> GitHub Pages</li>
+          </ul>
+        </div>
+        <a href="https://surbhidev.github.io/NCC-/" target="_blank" class="project-link">View Live Project</a>
+      </div>
+
+      <!-- IITH GPA Calculator -->
+      <div class="project-card" data-category="tools">
+        <h3>IITH GPA Calculator</h3>
+        <p>A lightweight, browser-based GPA calculator designed for students at IIT Hyderabad.</p>
+        <ul>
+          <li>Supports semester-wise input of grades and credits</li>
+          <li>Dynamically computes cumulative GPA with real-time updates</li>
+          <li>Enables "what-if" scenario planning for academic strategies</li>
+          <li>Built with vanilla HTML, CSS, JavaScript - loads in &lt;200ms</li>
+        </ul>
+        <div class="project-tech">
+          <h4>Tech Stack:</h4>
+          <ul>
+            <li><strong>Frontend:</strong>HTML, CSS</li>
+            <li><strong>Backend:</strong>JavaScript</li>
+            <li><strong>Deployment:</strong> GitHub Pages</li>
+          </ul>
+        </div>
+        <a href="https://surbhidev.github.io/-IITH-GPA-calculator/" target="_blank" class="project-link">View Live Project</a>
+      </div>
+
+      <!-- Vision-Based Autonomous Navigation -->
+      <div class="project-card" data-category="research">
+        <h3>Vision-Based Autonomous Navigation — IIT Hyderabad</h3>
+        <p>Research project enhancing safety and efficiency of autonomous navigation through edge-cloud offloading.</p>
+        <ul class="project-stats">
+          <li>⚙️ <strong>CPU Utilization ↓ 19%</strong> vs onboard inference</li>
+          <li>💻 <strong>GPU Utilization ↓ 49%</strong> after offloading</li>
+          <li>🧠 <strong>RAM Usage ↓ 25%</strong> via edge-cloud inference</li>
+        </ul>
+        <p>Built ROS-based system with Docker & Kubernetes, enabling faster responses and improved battery efficiency.</p>
+      </div>
+
+      <!-- N-Queen Visualizer -->
+      <div class="project-card" data-category="tools">
+        <h3>N-Queen Visualizer</h3>
+        <p>Interactive browser-based visualizer for the classic N-Queens Problem with animated backtracking.</p>
+        <ul>
+          <li>Dynamic board sizing from 4×4 to 8×8</li>
+          <li>Step-by-step animation of algorithm search space</li>
+          <li>Intuitive UI controls for play, pause, step navigation</li>
+          <li>Educational tool for algorithm classes and interviews</li>
+        </ul>
+        <div class="project-tech">
+          <h4>Tech Stack:</h4>
+          <ul>
+            <li><strong>Frontend:</strong>HTML, CSS</li>
+            <li><strong>Backend:</strong>JavaScript</li>
+            <li><strong>Deployment:</strong> GitHub Pages</li>
+          </ul>
+        </div>
+        <a href="https://surbhidev.github.io/N-Queen--visualize/" target="_blank" class="project-link">View Live Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="experience">
+    <h2 class="section-title">Experience & Roles</h2>
+    <div class="timeline">
+      <div class="tl-item fade">
+        <h4>Frontend Flutter Intern — Picapool (2025)</h4>
+        <p>Built Flutter UI features: text outline, back button styling, and image preview.</p>
+        <p>Implemented voice search using OS speech-to-text and integrated GCP API for higher accuracy.</p>
+      </div>
+      <div class="tl-item fade">
+        <h4>Research Intern - Vision-based Autonomous Navigation (IIT Hyderabad)</h4>
+        <h5>Under the guidance of Dr. Praveen Tammana, Mentor: Prashanth Sri Putcha</h5>
+        <p>Built a ROS-based offloading system for autonomous robots, reducing CPU load and enhancing inference latency using edge cloud services.</p>
+        <p>Packaged AI models using Docker & Kubernetes, enabling scalable deployment and real-time control of robot navigation modules.</p>
+        <p>Simulated real-world navigation on mapped environments and profiled inference latency across edge and onboard setups.</p>
+      </div>
+      <div class="tl-item fade">
+        <h4>Leadership</h4>
+        <p>Head Placement Coordinator, OCS - Office of Career Services Club (Present)</p>
+        <p>Internship Coordinator, OCS - Office of Career Services Club (2024-2025)</p>
+        <p>Web Coordinator, ACM - ACM IITH Chapter Club (2023-2024)</p>
+        <p>Web Coordinator, GDSC - Google Developer Student Club (2023-2024)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-sub">Let's collaborate or chat about ideas.</p>
+    <div class="socials">
+      <a href="https://github.com/surbhidev" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/surbhi15/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:cs22btech11057@iith.ac.in"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </section>
+
+  <button id="scrollTop" class="scroll-top-btn">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
